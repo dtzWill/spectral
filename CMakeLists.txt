@@ -161,6 +161,8 @@ set(spectral_SRCS
     src/userdirectorylistmodel.cpp
     src/utils.cpp
     src/main.cpp
+
+    src/hsluv.c
 )
 
 if (APPLE)
