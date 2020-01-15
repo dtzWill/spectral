@@ -1,5 +1,8 @@
 #include "spectraluser.h"
+#include "hsluv.h"
 
 QColor SpectralUser::color() {
-  return QColor::fromHslF(hueF(), 0.7, 0.5, 1);
+  double pr, pg, pb;
+  hsluv2rgb(hueF() * 360.0, 100.0, 50.0, &pr, &pg, &pb);
+  return QColor::fromRgbF(pr, pg, pb);
 }
