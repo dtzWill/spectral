@@ -391,6 +391,7 @@ lch2hpluv(Triplet* in_out)
 }
 
 
+namespace hsluv {
 
 void
 hsluv2rgb(double h, double s, double l, double* pr, double* pg, double* pb)
@@ -451,3 +452,5 @@ rgb2hpluv(double r, double g, double b, double* ph, double* ps, double* pl)
     *ps = tmp.b;
     *pl = tmp.c;
 }
+
+} // end namespace hsluv
