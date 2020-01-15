@@ -162,6 +162,7 @@ set(spectral_SRCS
     src/utils.cpp
     src/main.cpp
 
+    src/hsluv.h
     src/hsluv.c
 )
 
