@@ -5,7 +5,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 set(IDENTIFIER "org.eu.encom.spectral")
 set(COPYRIGHT "Copyright © 2018-2019 bhat@encom.eu.org")
 
-project(spectral VERSION 0.0.0 LANGUAGES C CXX)
+project(spectral VERSION 0.0.0 LANGUAGES CXX)
 
 if(UNIX AND NOT APPLE)
     set(LINUX 1)
@@ -163,7 +163,7 @@ set(spectral_SRCS
     src/main.cpp
 
     src/hsluv.h
-    src/hsluv.c
+    src/hsluv.cpp
 )
 
 if (APPLE)

@@ -29,9 +29,7 @@
 #ifndef HSLUV_H
 #define HSLUV_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+namespace hsluv {
 
 
 /**
@@ -83,8 +81,6 @@ void hpluv2rgb(double h, double s, double l, double* pr, double* pg, double* pb)
 void rgb2hpluv(double r, double g, double b, double* ph, double* ps, double* pl);
 
 
-#ifdef __cplusplus
-}
-#endif
+} // end namespace hsluv
 
 #endif  /* HSLUV_H */
